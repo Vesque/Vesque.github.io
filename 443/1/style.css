@@ -78,6 +78,11 @@ h3  /* DIRECTORY BUTTONS */
     border-image: repeating-linear-gradient(to top, #2C2C2C, #959595 20%, #2C2C2C 90%, #959595) 10 10;
 }
 
+#courses
+{
+	height: calc(80vh - 50px);
+}
+
 .courseholder /* CENTER TEXT FORMATTING */
 {	
 	font-family: "Helvetica", sans-serif;
