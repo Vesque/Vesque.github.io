@@ -147,7 +147,7 @@ p /* COURSE DESCRIPTIONS TEXT*/
 	top: 64.2%;
 	right: -206px;
 	width: 203px;
-	height: 40%;
+	height: calc(30vh - 50px);
 	padding-bottom: 50px;
 	background-color: #000043;
 	text-align: center;
