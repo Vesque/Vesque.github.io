@@ -1,0 +1,162 @@
+/*Name: Kevin Do
+	Course: 443
+	Assignment: #1
+*/
+html  /* EXTEND BODY TO ENTIRE PAGE, FIX GRADIENT CLIPPING */
+{
+	min-height: 100%;
+	background-repeat: no-repeat;
+}
+
+body#index /* BACKGROUND COLOR */ 
+{	
+	background: #AAABEE; /* Old browsers */
+	background: -moz-linear-gradient(top, #AAABEE 0%, #000043 85%, #000043 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AAABEE), color-stop(85%,#000043), color-stop(100%,#000043)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #AAABEE 0%,#000043 85%,#000043 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #AAABEE 0%,#000043 85%,#000043 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #AAABEE 0%,#000043 85%,#000043 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #AAABEE 0%,#000043 85%,#000043 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AAAABEE', endColorstr='#000043',GradientType=0 ); /* IE6-9 */
+}
+
+h1 /* CSC COURSES TITLE */
+{
+	text-align: center;
+	color: #0600F2;
+	font-family: "Arial", sans-serif;
+	font-size: 50px;
+	text-shadow: 3px 3px black;
+}
+
+#container /* HOLDS DIRECTORY, COURSE SELECTOR AND DESCRIPTION BOX */
+{
+	position: relative;
+	width: 100%;
+}
+
+#container div /* CONTAINER FORMATTING */
+{
+    margin:0 200px;
+}
+
+#directory  /* DIRECTORY BOX FORMATTING */
+{
+	position: absolute;
+	top: 20px;
+	width: 100px;
+	left: -150px;
+	border: 5px solid #0E05C2;
+	background: #000043; /* Old browsers */
+	background: -moz-linear-gradient(top, #000043 0%, #000043 24%, #000063 25%, #000063 49%, #02008a 50%, #02008a 74%, #0000ac 75%, #0000ac 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000043), color-stop(24%,#000043), color-stop(25%,#000063), color-stop(49%,#000063), color-stop(50%,#02008a), color-stop(74%,#02008a), color-stop(75%,#0000ac), color-stop(100%,#0000ac)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #000043 0%,#000043 24%,#000063 25%,#000063 49%,#02008a 50%,#02008a 74%,#0000ac 75%,#0000ac 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #000043 0%,#000043 24%,#000063 25%,#000063 49%,#02008a 50%,#02008a 74%,#0000ac 75%,#0000ac 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #000043 0%,#000043 24%,#000063 25%,#000063 49%,#02008a 50%,#02008a 74%,#0000ac 75%,#0000ac 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #000043 0%,#000043 24%,#000063 25%,#000063 49%,#02008a 50%,#02008a 74%,#0000ac 75%,#0000ac 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000043', endColorstr='#0000ac',GradientType=0 ); /* IE6-9 */	
+}
+
+#directory a /* DIRECTORY LINKS */
+{	
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+h3  /* DIRECTORY BUTTONS */
+{
+	font-family: "Times New Roman", serif;
+	font-style: italic;
+	font-size: 18px;
+	text-align: center;
+	margin: 0px;
+	padding: 5px;
+	border-top: 7px solid;
+	border-bottom: 7px solid;
+	border-left: 2px solid;
+	border-right: 2px solid;
+    border-image: repeating-linear-gradient(to top, #2C2C2C, #959595 20%, #2C2C2C 90%, #959595) 10 10;
+}
+
+.courseholder /* CENTER TEXT FORMATTING */
+{	
+	font-family: "Helvetica", sans-serif;
+	color: #333333;
+	text-align: center;
+	font-style: italic;
+}
+
+.courseholder a:link, a:visited /* COURSE LINK GENERAL */
+{
+	font-size: 20px;
+	font-weight: bold;
+	color: #0000CC;
+}
+
+.courseholder a:hover /* COURSE LINK WHEN HOVERING */
+{
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+.coursetable /* INNER TABLE FORMATTING */
+{
+	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	border: 10px dotted #000043;
+	padding: 5px 0px;
+}
+
+.coursetable td
+{
+	padding: 0px 20px 0px;
+}
+
+#descriptions  /* DESCRIPTION BOX FORMATTING */
+{
+	position: absolute;
+	top: 0;
+	width: 195px;
+	height: 80%;
+	right: -196px;
+}
+
+body#description /* DESCRIPTION BOX */
+{
+	background-color: #8F8FD2;
+}
+
+p /* COURSE DESCRIPTIONS TEXT*/
+{
+	font-family: "Helvetica";
+	font-weight: bold;
+	text-align: justify; /* why not left align? looks so much better */
+	color: #0000CC;
+}
+
+#logo /* LOGO SIZE AND POSITION */
+{
+	clear: both;
+	position: absolute;
+	top: 64.2%;
+	right: -206px;
+	width: 203px;
+	height: calc(40vh - 50px);
+	padding-bottom: 50px;
+	background-color: #000043;
+	text-align: center;
+}
+
+#end /* EMAIL MESSAGE AT BOTTOM */
+{	
+	position: absolute;
+	left: 0;
+	right: 0;
+	clear: both;
+	text-align: center;
+	color: #A6A6EE;
+	font-family: "Arial", sans-serif;
+	font-size: 10px;
+	overflow: visible;
+}
