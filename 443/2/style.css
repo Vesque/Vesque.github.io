@@ -1,0 +1,203 @@
+/*Name: Kevin Do
+	Course: 443
+	Assignment: #1
+*/
+/* import font */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    font-family: sans-serif;
+    padding: 1em;
+}
+
+#posmid /* center game */
+{ 
+	position: absolute;
+	left: 50%;
+	top: 45%;
+    transform: translate(-50%,-50%);
+} 
+
+#dealerHand  /* holds dealer hand */
+{
+	overflow: hidden;
+    position: relative;
+	
+    border-radius: 3px;
+    -webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+	
+    background-color: #008036;
+    padding: .5em;
+    font-size: 1.1em;
+    height: 150px;
+    width: 25em;
+}
+
+#playerHand  /* holds player hand */ 
+{
+    overflow: hidden;
+    position: relative;
+	
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	
+    background-color: #008036;
+	text-align:center;
+    color: #FFFFFF;
+    padding: .5em;
+    font-size: 1.1em;
+    height: 150px;
+    width: 25em;
+}
+
+.card  /* card "image" */
+{
+	background-color: #FFFFFF;
+	border: 1px solid gray;
+	
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	
+	box-shadow: 0 2px 2px 1px #999;
+	-moz-box-shadow: 0 2px 2px 1px #999;
+    -webkit-box-shadow: 0px 2px 2px 1px #999;
+	
+	text-align: left;
+	font-family: 'Times New Roman', serif;
+	font-size: 20pt;
+	
+	float: left;
+	width:  3.75em;
+	height: 138px;
+	padding: .1em;
+	margin-right: -1em;
+	
+}
+
+.Spades, .Clubs  /* black suit colors */
+{
+	color: #000000;
+}
+
+.Hearts, .Diamonds  /* red suit colors */
+{
+	color: #FF0000;
+}
+
+#handValue /* centering */
+{
+	text-align: center;
+}
+
+#handValue .number /* bold hand value */
+ {
+	 font-weight: bold;
+}
+
+#win /* color of wins */ 
+{
+	color: #008036;
+}
+
+#loss /* color of loss */
+{
+	color: #A30000;
+}
+
+#tie /* color of tie */ 
+{
+	color: #CC9900;
+}
+
+#hitButton, #standButton  /* hide hit and stand at start */
+{
+	display: none;
+}
+
+#dealButton  /* default deal button */
+{
+	position: relative;
+	border: 1px solid #000000;
+	
+	border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    
+	background-color: #303030;
+    color: #EFEFEF;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 13px;
+	
+	left: 42%;
+}
+
+#dealButton:hover /* deal button on hover */
+{
+    background-color: #777777;
+}
+
+#dealButton:active  /* deal button "jump" upon click */
+{	
+	position: relative;
+	top: 1px;
+}
+
+#hitButton /* default hit button */
+{
+    position: relative;
+    border: 1px solid #003316;	
+	
+	border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    background-color: #008036;
+    color: #EFEFEF;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 13px;
+	
+	left: 20%;
+
+}
+
+#hitButton:hover  /* hit button on hover */ 
+{ 
+    background-color: #66B386;
+}
+
+#standButton /* default stand button */
+{
+    position: relative;
+    border: 1px solid #410000;	
+	
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    background-color: #A30000;
+    color: #EFEFEF;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 13px;
+
+	left: 48%;
+}
+
+#standButton:hover  /* hit button on hover */
+{	 
+    background-color: #BF4D4D;
+}
+
+#dealButton:active, #hitButton:active, #standButton:active /* button "jump" */
+{
+    position: relative;
+    top: 1px;
+}
