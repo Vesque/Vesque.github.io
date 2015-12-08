@@ -154,7 +154,7 @@ sub save {
 	open(my $fh, '>>', 'Results.txt');
 	foreach my $answer (@survey_answers) {
 		if (defined param ($answer)) {
-			print $fh param($answer), "\n";
+			print $fh param($answer), ".";
 		}
 	}
 	close $fh;
