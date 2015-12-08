@@ -159,7 +159,8 @@ sub save {
 	}
 	close $fh;
 }
-	
+
+exit(0);
 	
 	
 	
